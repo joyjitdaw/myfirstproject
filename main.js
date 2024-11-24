@@ -21,21 +21,108 @@ function main(event) {
    
   return new Response(`
     <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Hello World</title>
-      <script>
-        ${htmx}
-      </script>
-    </head>
-    <body>
-      <h1>Hello World</h1>
-      <button hx-get="/messages" hx-target="#message">Load Message</button>
-      <p id="message"></p>
-    </body>
-    </html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jayjit Cricket Shop</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Jayjit Cricket Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search here..." aria-label="Search">
+        </div>
+    </header>
+
+    <main>
+        <section class="products">
+            <h2>Featured Products</h2>
+            <div class="product-card">
+                <img src="https://c8.alamy.com/comp/BH8C6P/cricket-bat-BH8C6P.jpg" alt="Cricket Bat">
+                <h3>Cricket Bat</h3>
+                <p>₹4,999</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://media.istockphoto.com/id/157441568/photo/new-cricket-ball.jpg?s=612x612&w=0&k=20&c=xEbH_DCQq98Up4o-MqaTQV-pD8EV5LOpGctKIy2Noa8=" alt="Cricket Ball">
+                <h3>Cricket Ball</h3>
+                <p>₹499</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://cdnmedia.dsc-cricket.com/media/catalog/product/cache/f6804705d3c9b06dccd038949280b6b0/b/o/bouncer-cricket-helmet-1_7.jpg" alt="Helmet">
+                <h3>Helmet</h3>
+                <p>₹1,999</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2022/4/UJ/VD/WC/59017650/white-mosquito-net-500x500.jpeg" alt="Pads">
+                <h3>Pads</h3>
+                <p>₹1,299</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://a2cricket.com/cdn/shop/files/8_911ad078-4d9c-48b4-a207-af750f47d36b_800x.jpg?v=1711780327" alt="Gloves">
+                <h3>Gloves</h3>
+                <p>₹799</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/26707260/2024/7/9/e2845cbc-aca3-4f77-8e4d-84208eb060bf1720512319459-AVANT-Men-Impact-Cricket-Shoes-8931720512319036-1.jpg" alt="Shoes">
+                <h3>Shoes</h3>
+                <p>₹2,499</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://www.sstoncricket.com/wp-content/uploads/2023/04/blaster_bag_2.jpg" alt="Bag">
+                <h3>Kit Bag</h3>
+                <p>₹1,699</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg1dYingp34zjQdYtXnhYEwaikLPmqywegKQ&s" alt="Stumps">
+                <h3>Stumps</h3>
+                <p>₹999</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2022/5/DX/JE/YM/30401503/01.jpg" alt="Cap">
+                <h3>Cap</h3>
+                <p>₹399</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://www.nextprint.in/cdn/shop/files/frontandback.jpg?v=1715777608" alt="Jersey">
+                <h3>Jersey</h3>
+                <p>₹1,199</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://rukminim2.flixcart.com/image/850/1000/jyhl1u80/guard/2/k/q/middle-standard-abdominal-guard-men-1-na-abdominal-guard-sg-original-imafgphhdchurjm2.jpeg?q=90&crop=false" alt="Guard">
+                <h3>Guard</h3>
+                <p>₹249</p>
+                <button>Add to Cart</button>
+            </div>
+           
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Jayjit Cricket Shop</p>
+    </footer>
+</body>
+</html>
+
   `, {
     headers: {
       'Content-Type': 'text/html; charset=utf-8'
