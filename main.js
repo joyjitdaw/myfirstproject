@@ -20,7 +20,7 @@ function main(event) {
   }
    
   return new Response(`
-   <!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -84,7 +84,7 @@ function main(event) {
     .product-card {
         background-color: white;
         padding: 1rem;
-        border: 1px solid #ddd;
+        border: 1px solid #c0c0c0cb;
         border-radius: 4px;
         text-align: center;
         margin: 1rem;
@@ -215,6 +215,8 @@ function main(event) {
     </footer>
 </body>
 </html>
+
+          
 
 
   `, {
