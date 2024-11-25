@@ -20,13 +20,106 @@ function main(event) {
   }
    
   return new Response(`
-    <!DOCTYPE html>
+   <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jayjit Cricket Shop</title>
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #f0f0f0;
+    }
+    
+    header {
+        background-color: #333;
+        color: white;
+        padding: 1rem 0;
+        text-align: center;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    nav ul li {
+        display: inline;
+        margin-right: 10px;
+    }
+    
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .search-bar {
+        margin-top: 10px;
+        text-align: center;
+    }
+    
+    .search-bar input {
+        width: 50%;
+        padding: 0.5rem;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 1rem;
+    }
+    
+    main {
+        padding: 2rem;
+    }
+    
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .product-card {
+        background-color: white;
+        padding: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        text-align: center;
+        margin: 1rem;
+        width: 200px;
+    }
+    
+    .product-card img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    button {
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+    
+    button:hover {
+        background-color: #0056b3;
+    }
+    
+    @media (max-width: 768px) {
+        .products {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .product-card {
+            width: 90%;
+        }
+    }
+    </style>
 </head>
 <body>
     <header>
@@ -122,6 +215,7 @@ function main(event) {
     </footer>
 </body>
 </html>
+
 
   `, {
     headers: {
