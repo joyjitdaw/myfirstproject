@@ -37,7 +37,7 @@ function main(event) {
     }
     
     header {
-        background-color: #333;
+        background-color: #0d81d9;
         color: white;
         padding: 1rem 0;
         text-align: center;
