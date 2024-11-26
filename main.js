@@ -20,7 +20,7 @@ function main(event) {
   }
    
   return new Response(`
-  <!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -33,7 +33,7 @@ function main(event) {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        background-color: #f0f0f0;
+        background-color: rgb(255, 237, 202);
     }
     
     header {
@@ -215,6 +215,7 @@ function main(event) {
     </footer>
 </body>
 </html>
+
 
           
 
